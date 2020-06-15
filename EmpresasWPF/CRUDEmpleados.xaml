@@ -1,0 +1,28 @@
+﻿<Window x:Class="EmpresasWPF.CRUDEmpleados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmpresasWPF"
+        mc:Ignorable="d"
+        Title="Mantenedor de Empleados" Height="386.171" Width="514.644" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Label Content="Rut :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombres :" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Apellidos :" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+        <Label Content="Empresa :" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRut" HorizontalAlignment="Left" Height="23" Margin="80,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
+        <TextBox x:Name="txtDv" HorizontalAlignment="Left" Height="23" Margin="157,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="32"/>
+        <TextBox x:Name="txtNombres" HorizontalAlignment="Left" Height="23" Margin="80,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <TextBox x:Name="txtApellidos" HorizontalAlignment="Left" Height="23" Margin="80,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202"/>
+        <ComboBox x:Name="cboEmpresa" HorizontalAlignment="Left" Margin="80,93,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="18,130,0,0" VerticalAlignment="Top" Width="75" Click="btnAgregar_Click"/>
+        <Button x:Name="btnConsultar" Content="Consultar" HorizontalAlignment="Left" Margin="98,130,0,0" VerticalAlignment="Top" Width="75" Click="btnConsultar_Click"/>
+        <Button x:Name="btnActualizar" Content="Actualizar" HorizontalAlignment="Left" Margin="178,130,0,0" VerticalAlignment="Top" Width="75" Click="btnActualizar_Click"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="258,130,0,0" VerticalAlignment="Top" Width="75" Click="btnEliminar_Click"/>
+        <Label Content="Empleados" HorizontalAlignment="Left" Margin="18,155,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <DataGrid x:Name="gdEmpleados" HorizontalAlignment="Left" Height="164" Margin="18,181,0,0" VerticalAlignment="Top" Width="479"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="397,10,0,0" VerticalAlignment="Top" Width="100" Source="Images/Empleados.png"/>
+
+    </Grid>
+</Window>

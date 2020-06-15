@@ -1,0 +1,30 @@
+﻿<Window x:Class="EmpresasWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EmpresasWPF"
+        mc:Ignorable="d"
+        Title="Empresas y Empleados WPF" Height="300.722" Width="497.518" WindowStartupLocation="CenterOwner">
+    <Grid>
+
+        <Button x:Name="btnEmpresas" HorizontalAlignment="Left" Margin="49,58,0,0" VerticalAlignment="Top" Width="178" Background="White" Click="btnEmpresas_Click">
+            <StackPanel>
+                <Image HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="Images/Empresas.png"/>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Empresas</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnEmpleados" HorizontalAlignment="Left" Margin="244,58,0,0" VerticalAlignment="Top" Width="178" Background="White" Click="btnEmpleados_Click">
+            <StackPanel>
+                <Image x:Name="imgEmpleados" HorizontalAlignment="Left" Height="100" Margin="0,0,0,0" VerticalAlignment="Top" Width="100" Source="Images/Empleados.png"/>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" >Empleados
+                </TextBlock>
+            </StackPanel>
+        </Button>
+
+
+
+
+    </Grid>
+</Window>
